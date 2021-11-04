@@ -2,11 +2,13 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/aaydee1999/IBC/blockchain"
 )
 
 func main() {
 
-	blockChain := InitBlockChain()
+	blockChain := blockchain.InitBlockChain()
 
 	blockChain.AddBlock("First Block After Genesis")
 	blockChain.AddBlock("Second Block After Genesis")
